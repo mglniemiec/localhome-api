@@ -5,7 +5,7 @@ app = FastAPI()
 
 # Load real estate site data from the JSON file
 with open("sites_data.json", "r") as f:
-    data = json.load(f)
+    data = {k.lower(): v for k, v in json.load(f).items()}
 
 @app.get("/real-estate-sites/{country}")
 def get_site(country):
