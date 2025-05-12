@@ -22,11 +22,9 @@ This API helps by returning the most popular **local** site per country — so y
 
 ## Example Usage
 
-**GET** `/real-estate-sites/france`
+GET `/real-estate-sites/france`
 
-**Response:**
-
-```json
+Response:
 {
   "country": "france",
   "site": "https://www.seloger.com"
@@ -46,14 +44,6 @@ This will open the interactive Swagger UI, where you can see and interact with t
 3. Test the API:
 You can now test the API by sending a GET request to the endpoint:
 GET /real-estate-sites/{country}
-
-Example, the response for:
-GET /real-estate-sites/france
-will look like this:
-{
-  "country": "france",
-  "site": "https://www.seloger.com"
-}
 
 
 ## Data Source
